@@ -1,0 +1,49 @@
+{
+    "name": "digitalp2pbot",
+    "version": "1.0.0",
+    "description": "P2P Bot Colombia",
+    "main": "bot/app.ts",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "export NODE_ENV=test && mocha --exit tests/",
+        "build": "tsc",
+        "lint": "eslint .",
+        "format": "prettier --write '**/*.js'",
+        "start": "ts-node bot/index.ts"
+    },
+    "keywords": [
+        "digital",
+        "telegram",
+        "bot",
+        "p2p"
+    ],
+    "author": "Jonathan Díaz <jonthdiaz@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.11.23",
+        "chai": "^5.1.0",
+        "chokidar": "^3.6.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-n": "^16.6.2",
+        "eslint-plugin-promise": "^6.1.1",
+        "mocha": "^10.3.0",
+        "mongodb-memory-server": "^9.1.6",
+        "nodemon": "^3.1.0",
+        "prettier": "^3.2.5",
+        "sinon": "^17.0.1",
+        "telegram-test-api": "^4.2.1",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.6.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "mongoose": "^8.2.0",
+        "telegraf": "^4.16.3"
+    }
+}
